@@ -1,0 +1,20 @@
+{                                                                               
+                                                                                
+  "manifest_version": 2,                                                        
+  "name": "Block Youtube Comments",                                                          
+  "version": "1.0",                                                             
+                                                                                
+  "description": "Removes all youtube comments",
+                                                                                
+  "icons": {                                                                    
+    "48": "icons/border-48.png"                                                 
+  },                                                                            
+                                                                                
+  "content_scripts": [                                                          
+    {                                                                           
+      "matches": ["*://*.youtube.com/*"],                                       
+      "js": ["block_youtube_comments.js"]                                                    
+    }                                                                           
+  ]                                                                             
+                                                                                
+}
